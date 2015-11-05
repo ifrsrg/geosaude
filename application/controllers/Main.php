@@ -1,23 +1,24 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class  Main extends CI_Controller {
+class Main extends CI_Controller {
 
-	public function __construct(){
-		parent::__construct();
-		$this->load->helper('url');
-	}
+	// public function __construct(){
+	// 	parent::__construct();
+	// 	// $this->load->helper('url');
+	// }
 	public function index(){
 		$this->load->view('index');
 	}
-	public function sobre(){
-		$this->load->view('sobre');
+	public function about(){
+		$this->load->view('about');
 	}
-	public function contato(){
-		$this->load->view('contato');
+	public function contact(){
+		$this->load->view('contact');
 	}
-	public function arearestrita(){
-		$this->load->view('arearestrita');
-	}
+	public function restrictedarea(){
+     	 $this->load->view('restricted_area');
+ 	}
 
+	
 }

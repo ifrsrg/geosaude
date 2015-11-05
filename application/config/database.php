@@ -63,15 +63,16 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'postgres',
-	'password' => 'postgres',
-	'database' => 'site-geo',
-	'dbdriver' => 'postgre',
+	'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=site_geo;user=postgres;password=senha',
+	// 'dns'   => '',
+	'hostname' => '127.0.0.1',
+	'username' => 'postgres', // nome usuario do banco de dados
+	'password' => 'senha', // senha do usuário do banco de dados
+	'database' => 'site_geo', // nome do banco de dados
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => TRUE,
+	'db_debug' => FALSE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
@@ -81,5 +82,7 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE 
+	'save_queries' => TRUE ,
+	'port' =>  5432
 );
+// INSTALAR sudo apt-get install php5-pgsql NO COMPUTADOR!!!!

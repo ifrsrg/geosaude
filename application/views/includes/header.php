@@ -47,13 +47,13 @@
                         <?= anchor('main/index','Projeto Geosaúde') ?>
                     </li>
                     <li>      
-                        <?php echo anchor('main/sobre','Sobre') ?>
+                        <?php echo anchor('main/about','Sobre') ?>
                     </li>
                     <li>
-                        <?php echo anchor('Main/contato','Contato') ?>
+                        <?php echo anchor('main/contact','Contato') ?>
                     </li>
                     <li>
-                        <?php echo anchor('Main/arearestrita','Área Restrita') ?>
+                        <?php echo anchor('main/restrictedarea','Área Restrita') ?>
                     </li>
                 </ul>
             </div>
