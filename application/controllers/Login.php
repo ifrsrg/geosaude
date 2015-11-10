@@ -5,7 +5,9 @@ class Login extends CI_Controller{ // criação da classe Login
     function authenticate(){
         $this->load->model('users_model');// chama o modelo usuarios_model
         $user = $this->input->post('user');// pega via post username do form
+        $user = $this->db->escape($user);
         $password = $this->input->post('password'); // pega via post a senha do form
+        $password = $this->db->escape($password);
 
         $flag = $this->users_model->verify_password($user,$password); 
         
