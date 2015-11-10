@@ -63,13 +63,13 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=site_geo;user=postgres;password=senha',
-	// 'dns'   => '',
-	'hostname' => '127.0.0.1',
+	// 'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=site_geo;user=postgres;password=senha',
+	'dns'   => '',
+	'hostname' => 'localhost',
 	'username' => 'postgres', // nome usuario do banco de dados
 	'password' => 'senha', // senha do usuário do banco de dados
 	'database' => 'site_geo', // nome do banco de dados
-	'dbdriver' => 'pdo',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => FALSE,

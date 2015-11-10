@@ -10,7 +10,7 @@ class Users_Model extends CI_Model {
 
 		$this->db->select('name');
 		$this->db->where('password', $password);
-		$db_user = $this->db->get('users')->row_array();
+		$db_user = $this->db->get('usr')->row_array();
 
 		if ($user == $db_user){
 			$i = 1;
