@@ -1,4 +1,10 @@
 <?php 
 	//echo "$msg";
 	// echo "blabal";
-print_r($dados);
+    echo $msg;
+    echo "<br>";
+    echo $usuario;
+    echo "<br>";
+    echo $password;
+    echo "<br>";
+    echo $flag;
