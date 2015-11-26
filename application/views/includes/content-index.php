@@ -4,7 +4,7 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Projeto GeoSaúde - IFRS 
+                <h1 class="page-header">Programa GeoSaúde - IFRS 
                     <small></small>
                 </h1>
             </div>
